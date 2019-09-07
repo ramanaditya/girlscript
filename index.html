@@ -30,29 +30,29 @@
         <div class="classy-nav-container breakpoint-off">
             <div class="container">
                 <!-- Classy Menu -->
-                <!--<nav class="classy-navbar justify-content-between" id="conferNav">-->
+                <nav class="classy-navbar justify-content-between" id="conferNav">
 
                     <!-- Logo -->
                     <!--<a class="nav-brand" href="./index.html"><img src="./img/core-img/logo1234.png" alt=""></a>-->
-                    <!--<a class="nav-brand" href="./index.html" style="color:#1abc9c;">GIRLSCRIPT</a>-->
+                    <a class="nav-brand" href="./index.html" style="color:#1abc9c;">GIRLSCRIPT</a>
 
                     <!-- Navbar Toggler -->
-                    <!--<div class="classy-navbar-toggler">
+                    <div class="classy-navbar-toggler">
                         <span class="navbarToggler"><span></span><span></span><span></span></span>
-                    </div>-->
+                    </div>
 
                     <!-- Menu -->
-                    <!--<div class="classy-menu">-->
+                    <div class="classy-menu">
                         <!-- Menu Close Button -->
-                        <!--<div class="classycloseIcon">
+                        <div class="classycloseIcon">
                             <div class="cross-wrap"><span class="top"></span><span class="bottom"></span></div>
-                        </div>-->
+                        </div>
                         <!-- Nav Start -->
-                        <!--<div class="classynav">
+                        <div class="classynav">
                             <ul id="nav">
-                                <li class="active"><a href="index.html">Home</a></li>
-                                <li><a href="#">Pages</a>
-                                    <ul class="dropdown">
+                                <li class="btns active"><a href="#home">Home</a></li>
+                                <li class="btns"><a href="#about">About Us</a>
+                                    <!--<ul class="dropdown">
                                         <li><a href="index.html">- Home</a></li>
                                         <li><a href="about.html">- About Us</a></li>
                                         <li><a href="speakers.html">- Speakears</a></li>
@@ -69,26 +69,41 @@
                                                 <li><a href="#">- Dropdown Item</a></li>
                                             </ul>
                                         </li>
-                                    </ul>
+                                    </ul>-->
                                 </li>
-                                <li><a href="speakers.html">Speakears</a></li>
-                                <li><a href="blog.html">Blog</a></li>
-                                <li><a href="contact.html">Contact</a></li>
-                            </ul>-->
+                                <li class="btns"><a href="#timeline">Timeline</a></li>
+                                <li class="btns"><a href="#news">News</a></li>
+                                <li class="btns"><a href="#team">Our Team</a></li>
+                                <li class="btns"><a href="#contact">Contact</a></li>
+                            </ul>
 
                             <!-- Get Tickets Button -->
-                            <!--<a href="#" class="btn confer-btn mt-3 mt-lg-0 ml-3 ml-lg-5">Get Tickets <i class="zmdi zmdi-long-arrow-right"></i></a>
-                        </div>-->
+                            <a href="https://docs.google.com/forms/d/e/1FAIpQLSfQtbqDAW5t40EsgXNW6-_Onp1c-q4SKodImqBWYbH851BJiQ/viewform" class="btn confer-btn mt-3 mt-lg-0 ml-3 ml-lg-5">Join Us <i class="zmdi zmdi-long-arrow-right"></i></a>
+                        </div>
                         <!-- Nav End -->
                     </div>
                 </nav>
             </div>
         </div>
     </header>
+    <script>
+// Add active class to the current button (highlight it)
+var header = document.getElementById("nav");
+var btns = header.getElementsByClassName("btns");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function() {
+  var current = document.getElementsByClassName("active");
+  if (current.length > 0) { 
+    current[0].className = current[0].className.replace(" active", "");
+  }
+  this.className += " active";
+  });
+}
+</script>
     <!-- Header Area End -->
 
     <!-- Welcome Area Start -->
-    <section class="welcome-area">
+    <section class="welcome-area" id="home">
         <div class="welcome-slides owl-carousel">
             
             <!-- Single Slide -->
@@ -189,355 +204,9 @@
     </section>
     <!-- About Us And Countdown Area End -->
 
-    <!-- Our Speakings Area Start -->
-    <section class="our-speaker-area bg-img bg-gradient-overlay section-padding-100-60" style="background-image: url(img/bg-img/3.jpg);">
-        <div class="container">
-            <div class="row">
-                <!-- Heading -->
-                <div class="col-12">
-                    <div class="section-heading text-center wow fadeInUp" data-wow-delay="300ms">
-                        <p>Our Team</p>
-                        <h4>Organisers</h4>
-                    </div>
-                </div>
-            </div>
-
-            <div class="row">
-                <!-- Single Speaker Area -->
-                <div class="col-12 col-md-6 col-lg-3">
-                    <div class="single-speaker-area bg-gradient-overlay-2 wow fadeInUp" data-wow-delay="300ms">
-                        <!-- Thumb -->
-                        <div class="speaker-single-thumb">
-                            <img src="img/core-img/Shaina.jpg" alt="">
-                        </div>
-                        <!-- Social Info -->
-                        <div class="social-info">
-                            <a href="https://www.linkedin.com/in/shaina-parvanda/"><i class="zmdi zmdi-linkedin"></i></a>
-                        </div>
-                        <!-- Info -->
-                        <div class="speaker-info">
-                            <h5>Shaina Parvanda</h5>
-                            <p>Bangalore Chapter Leader</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Single Speaker Area -->
-                <div class="col-12 col-md-6 col-lg-3">
-                    <div class="single-speaker-area bg-gradient-overlay-2 wow fadeInUp" data-wow-delay="300ms">
-                        <!-- Thumb -->
-                        <div class="speaker-single-thumb">
-                            <img src="img/core-img/devesh_verma.jpg" alt="">
-                        </div>
-                        <!-- Social Info -->
-                        <div class="social-info">
-                            <a href="https://www.linkedin.com/in/devesh-verma/"><i class="zmdi zmdi-linkedin"></i></a>
-                        </div>
-                        <!-- Info -->
-                        <div class="speaker-info">
-                            <h5>Devesh Verma</h5>
-                            <p>Bangalore Chapter Leader</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Single Speaker Area -->
-                <div class="col-12 col-md-6 col-lg-3">
-                    <div class="single-speaker-area bg-gradient-overlay-2 wow fadeInUp" data-wow-delay="300ms">
-                        <!-- Thumb -->
-                        <div class="speaker-single-thumb">
-                            <img src="img/core-img/aditya_raman.jpg" alt="">
-                        </div>
-                        <!-- Social Info -->
-                        <div class="social-info">
-                            <a href="https://www.linkedin.com/in/ramanaditya/"><i class="zmdi zmdi-linkedin"></i></a>
-                        </div>
-                        <!-- Info -->
-                        <div class="speaker-info">
-                            <h5>Aditya Raman</h5>
-                            <p>Organiser</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Single Speaker Area -->
-                <div class="col-12 col-md-6 col-lg-3">
-                    <div class="single-speaker-area bg-gradient-overlay-2 wow fadeInUp" data-wow-delay="300ms">
-                        <!-- Thumb -->
-                        <div class="speaker-single-thumb">
-                            <img src="img/core-img/akanshi.jpg" alt="">
-                        </div>
-                        <!-- Social Info -->
-                        <div class="social-info">
-                            <a href="#"><i class="zmdi zmdi-linkedin"></i></a>
-                        </div>
-                        <!-- Info -->
-                        <div class="speaker-info">
-                            <h5>Akanshi Srivastava</h5>
-                            <p>Organiser</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Single Speaker Area -->
-                <div class="col-12 col-md-6 col-lg-3">
-                    <div class="single-speaker-area bg-gradient-overlay-2 wow fadeInUp" data-wow-delay="300ms">
-                        <!-- Thumb -->
-                        <div class="speaker-single-thumb">
-                            <img src="img/core-img/nisha.png" alt="">
-                        </div>
-                        <!-- Social Info -->
-                        <div class="social-info">
-                            <a href="#"><i class="zmdi zmdi-linkedin"></i></a>
-                        </div>
-                        <!-- Info -->
-                        <div class="speaker-info">
-                            <h5>Nisha Singh</h5>
-                            <p>Organiser</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Single Speaker Area -->
-                <div class="col-12 col-md-6 col-lg-3">
-                    <div class="single-speaker-area bg-gradient-overlay-2 wow fadeInUp" data-wow-delay="300ms">
-                        <!-- Thumb -->
-                        <div class="speaker-single-thumb">
-                            <img src="img/core-img/sahil_agarwal.jpg" alt="">
-                        </div>
-                        <!-- Social Info -->
-                        <div class="social-info">
-                            <a href="#"><i class="zmdi zmdi-linkedin"></i></a>
-                        </div>
-                        <!-- Info -->
-                        <div class="speaker-info">
-                            <h5>Sahil Agarwal</h5>
-                            <p>Organiser</p>
-                        </div>
-                    </div>
-                </div>
-
-
-                <!-- Single Speaker Area -->
-                <div class="col-12 col-md-6 col-lg-3">
-                    <div class="single-speaker-area bg-gradient-overlay-2 wow fadeInUp" data-wow-delay="300ms">
-                        <!-- Thumb -->
-                        <div class="speaker-single-thumb">
-                            <img src="img/core-img/priya_pandey.jpg" alt="">
-                        </div>
-                        <!-- Social Info -->
-                        <div class="social-info">
-                            <a href="#"><i class="zmdi zmdi-linkedin"></i></a>
-                        </div>
-                        <!-- Info -->
-                        <div class="speaker-info">
-                            <h5>Priya Pandey</h5>
-                            <p>Organiser</p>
-                        </div>
-                    </div>
-                </div>
-
-
-                <!-- Single Speaker Area -->
-                <div class="col-12 col-md-6 col-lg-3">
-                    <div class="single-speaker-area bg-gradient-overlay-2 wow fadeInUp" data-wow-delay="300ms">
-                        <!-- Thumb -->
-                        <div class="speaker-single-thumb">
-                            <img src="img/core-img/prasanna.jpg" alt="">
-                        </div>
-                        <!-- Social Info -->
-                        <div class="social-info">
-                            <a href="#"><i class="zmdi zmdi-linkedin"></i></a>
-                        </div>
-                        <!-- Info -->
-                        <div class="speaker-info">
-                            <h5>Prasanna Kamath</h5>
-                            <p>Organiser</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Single Speaker Area -->
-                <div class="col-12 col-md-6 col-lg-3">
-                    <div class="single-speaker-area bg-gradient-overlay-2 wow fadeInUp" data-wow-delay="300ms">
-                        <!-- Thumb -->
-                        <div class="speaker-single-thumb">
-                            <img src="img/core-img/gaurang.JPG" alt="">
-                        </div>
-                        <!-- Social Info -->
-                        <div class="social-info">
-                            <a href="#"><i class="zmdi zmdi-linkedin"></i></a>
-                        </div>
-                        <!-- Info -->
-                        <div class="speaker-info">
-                            <h5>Gaurang Mittal</h5>
-                            <p>Organiser</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Single Speaker Area -->
-                <div class="col-12 col-md-6 col-lg-3">
-                    <div class="single-speaker-area bg-gradient-overlay-2 wow fadeInUp" data-wow-delay="300ms">
-                        <!-- Thumb -->
-                        <div class="speaker-single-thumb">
-                            <img src="img/core-img/namratha.jpg" alt="">
-                        </div>
-                        <!-- Social Info -->
-                        <div class="social-info">
-                            <a href="#"><i class="zmdi zmdi-linkedin"></i></a>
-                        </div>
-                        <!-- Info -->
-                        <div class="speaker-info">
-                            <h5>Namratha </h5>
-                            <p>Organiser</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Single Speaker Area -->
-                <div class="col-12 col-md-6 col-lg-3">
-                    <div class="single-speaker-area bg-gradient-overlay-2 wow fadeInUp" data-wow-delay="300ms">
-                        <!-- Thumb -->
-                        <div class="speaker-single-thumb">
-                            <img src="img/core-img/aswin.jpeg" alt="">
-                        </div>
-                        <!-- Social Info -->
-                        <div class="social-info">
-                            <a href="#"><i class="zmdi zmdi-linkedin"></i></a>
-                        </div>
-                        <!-- Info -->
-                        <div class="speaker-info">
-                            <h5>Aswin Gopinathan </h5>
-                            <p>Organiser</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Single Speaker Area -->
-                <div class="col-12 col-md-6 col-lg-3">
-                    <div class="single-speaker-area bg-gradient-overlay-2 wow fadeInUp" data-wow-delay="300ms">
-                        <!-- Thumb -->
-                        <div class="speaker-single-thumb">
-                            <img src="img/core-img/vishakha.jpg" alt="">
-                        </div>
-                        <!-- Social Info -->
-                        <div class="social-info">
-                            <a href="#"><i class="zmdi zmdi-linkedin"></i></a>
-                        </div>
-                        <!-- Info -->
-                        <div class="speaker-info">
-                            <h5>Vishakha </h5>
-                            <p>Organiser</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-12 col-md-6 col-lg-3">
-                    <div class="single-speaker-area bg-gradient-overlay-2 wow fadeInUp" data-wow-delay="300ms">
-                        <!-- Thumb -->
-                        <div class="speaker-single-thumb">
-                            <img src="img/core-img/hitesh.jpg" alt="">
-                        </div>
-                        <!-- Social Info -->
-                        <div class="social-info">
-                            <a href="#"><i class="zmdi zmdi-linkedin"></i></a>
-                        </div>
-                        <!-- Info -->
-                        <div class="speaker-info">
-                            <h5>Hitesh </h5>
-                            <p>Organiser</p>
-                        </div>
-                    </div>
-                </div>
-
-
-                <div class="col-12 col-md-6 col-lg-3">
-                    <div class="single-speaker-area bg-gradient-overlay-2 wow fadeInUp" data-wow-delay="300ms">
-                        <!-- Thumb -->
-                        <div class="speaker-single-thumb">
-                            <img src="img/core-img/sainandini.jpg" alt="">
-                        </div>
-                        <!-- Social Info -->
-                        <div class="social-info">
-                            <a href="#"><i class="zmdi zmdi-linkedin"></i></a>
-                        </div>
-                        <!-- Info -->
-                        <div class="speaker-info">
-                            <h5>Sainandini Mishra </h5>
-                            <p>Organiser</p>
-                        </div>
-                    </div>
-                </div>
-
-
-                <div class="col-12 col-md-6 col-lg-3">
-                    <div class="single-speaker-area bg-gradient-overlay-2 wow fadeInUp" data-wow-delay="300ms">
-                        <!-- Thumb -->
-                        <div class="speaker-single-thumb">
-                            <img src="img/core-img/janak.JPG" alt="">
-                        </div>
-                        <!-- Social Info -->
-                        <div class="social-info">
-                            <a href="#"><i class="zmdi zmdi-linkedin"></i></a>
-                        </div>
-                        <!-- Info -->
-                        <div class="speaker-info">
-                            <h5>Janak Chadha </h5>
-                            <p>Organiser</p>
-                        </div>
-                    </div>
-                </div>
-
-
-                <div class="col-12 col-md-6 col-lg-3">
-                    <div class="single-speaker-area bg-gradient-overlay-2 wow fadeInUp" data-wow-delay="300ms">
-                        <!-- Thumb -->
-                        <div class="speaker-single-thumb">
-                            <img src="img/core-img/himanshu.jpg" alt="">
-                        </div>
-                        <!-- Social Info -->
-                        <div class="social-info">
-                            <a href="#"><i class="zmdi zmdi-linkedin"></i></a>
-                        </div>
-                        <!-- Info -->
-                        <div class="speaker-info">
-                            <h5>Himanshu Parvanda </h5>
-                            <p>Organiser</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-12 col-md-6 col-lg-3">
-                    <div class="single-speaker-area bg-gradient-overlay-2 wow fadeInUp" data-wow-delay="300ms">
-                        <!-- Thumb -->
-                        <div class="speaker-single-thumb">
-                            <img src="img/core-img/nikhil.jpg" alt="">
-                        </div>
-                        <!-- Social Info -->
-                        <div class="social-info">
-                            <a href="#"><i class="zmdi zmdi-linkedin"></i></a>
-                        </div>
-                        <!-- Info -->
-                        <div class="speaker-info">
-                            <h5>Nikhil Bhatnagar </h5>
-                            <p>Organiser</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!--<div class="col-12">
-                    <div class="more-speaker-btn text-center mt-20 mb-40 wow fadeInUp" data-wow-delay="300ms">
-                        <a class="btn confer-btn-white" href="#">view all Speaker <i class="zmdi zmdi-long-arrow-right"></i></a>
-                    </div>
-                </div>-->
-            </div>
-        </div>
-    </section>
-    <!-- Our Speakings Area End -->
 
     <!-- Our Schedule Area Start -->
-    <section class="our-schedule-area section-padding-100">
+    <section class="our-schedule-area section-padding-100" id="timeline">
         <div class="container">
             <div class="row">
                 <!-- Heading -->
@@ -592,7 +261,7 @@
                                             </div>
                                             <!-- Single Schedule Info -->
                                             <div class="schedule-time-place">
-                                                <p><i class="zmdi zmdi-time"></i> Sep 14, 2019</p>
+                                                <p><i class="zmdi zmdi-time"></i> Sep 14, 2019 &nbsp; 08:30 AM</p>
                                                 <p><i class="zmdi zmdi-map"></i> Sir MVIT, Bangalore</p>
                                             </div>
                                             <!-- Schedule Btn -->
@@ -942,7 +611,7 @@
     <!-- Our Sponsor And Client Area End -->
 
     <!-- Our Blog Area Start -->
-    <section class="our-blog-area bg-img bg-gradient-overlay section-padding-100-60" style="background-image: url(img/bg-img/17.jpg);">
+    <section class="our-blog-area bg-img bg-gradient-overlay section-padding-100-60" style="background-image: url(img/bg-img/17.jpg);" id="news">
         <div class="container">
             <div class="row">
                 <div class="col-12">
@@ -1028,8 +697,355 @@
     </section>
     <!-- Our Blog Area End -->
 
+    <!-- Our Speakings Area Start -->
+    <section class="our-speaker-area bg-img bg-gradient-overlay section-padding-100-60" style="background-image: url(img/bg-img/3.jpg);" id="team">
+        <div class="container">
+            <div class="row">
+                <!-- Heading -->
+                <div class="col-12">
+                    <div class="section-heading text-center wow fadeInUp" data-wow-delay="300ms">
+                        <p>Our Team</p>
+                        <h4>Organisers</h4>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <!-- Single Speaker Area -->
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="single-speaker-area bg-gradient-overlay-2 wow fadeInUp" data-wow-delay="300ms">
+                        <!-- Thumb -->
+                        <div class="speaker-single-thumb">
+                            <img src="img/core-img/Shaina.jpg" alt="">
+                        </div>
+                        <!-- Social Info -->
+                        <div class="social-info">
+                            <a href="https://www.linkedin.com/in/shaina-parvanda/"><i class="zmdi zmdi-linkedin"></i></a>
+                        </div>
+                        <!-- Info -->
+                        <div class="speaker-info">
+                            <h5>Shaina Parvanda</h5>
+                            <p>Bangalore Chapter Leader</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Single Speaker Area -->
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="single-speaker-area bg-gradient-overlay-2 wow fadeInUp" data-wow-delay="300ms">
+                        <!-- Thumb -->
+                        <div class="speaker-single-thumb">
+                            <img src="img/core-img/devesh_verma.jpg" alt="">
+                        </div>
+                        <!-- Social Info -->
+                        <div class="social-info">
+                            <a href="https://www.linkedin.com/in/devesh-verma/"><i class="zmdi zmdi-linkedin"></i></a>
+                        </div>
+                        <!-- Info -->
+                        <div class="speaker-info">
+                            <h5>Devesh Verma</h5>
+                            <p>Bangalore Chapter Leader</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Single Speaker Area -->
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="single-speaker-area bg-gradient-overlay-2 wow fadeInUp" data-wow-delay="300ms">
+                        <!-- Thumb -->
+                        <div class="speaker-single-thumb">
+                            <img src="img/core-img/aditya_raman.jpg" alt="">
+                        </div>
+                        <!-- Social Info -->
+                        <div class="social-info">
+                            <a href="https://www.linkedin.com/in/ramanaditya/"><i class="zmdi zmdi-linkedin"></i></a>
+                        </div>
+                        <!-- Info -->
+                        <div class="speaker-info">
+                            <h5>Aditya Raman</h5>
+                            <p>Organiser</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Single Speaker Area -->
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="single-speaker-area bg-gradient-overlay-2 wow fadeInUp" data-wow-delay="300ms">
+                        <!-- Thumb -->
+                        <div class="speaker-single-thumb">
+                            <img src="img/core-img/akanshi.jpg" alt="">
+                        </div>
+                        <!-- Social Info -->
+                        <div class="social-info">
+                            <a href="#"><i class="zmdi zmdi-linkedin"></i></a>
+                        </div>
+                        <!-- Info -->
+                        <div class="speaker-info">
+                            <h5>Akanshi Srivastava</h5>
+                            <p>Organiser</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Single Speaker Area -->
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="single-speaker-area bg-gradient-overlay-2 wow fadeInUp" data-wow-delay="300ms">
+                        <!-- Thumb -->
+                        <div class="speaker-single-thumb">
+                            <img src="img/core-img/nisha.png" alt="">
+                        </div>
+                        <!-- Social Info -->
+                        <div class="social-info">
+                            <a href="#"><i class="zmdi zmdi-linkedin"></i></a>
+                        </div>
+                        <!-- Info -->
+                        <div class="speaker-info">
+                            <h5>Nisha Singh</h5>
+                            <p>Organiser</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Single Speaker Area -->
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="single-speaker-area bg-gradient-overlay-2 wow fadeInUp" data-wow-delay="300ms">
+                        <!-- Thumb -->
+                        <div class="speaker-single-thumb">
+                            <img src="img/core-img/sahil_agarwal.jpg" alt="">
+                        </div>
+                        <!-- Social Info -->
+                        <div class="social-info">
+                            <a href="#"><i class="zmdi zmdi-linkedin"></i></a>
+                        </div>
+                        <!-- Info -->
+                        <div class="speaker-info">
+                            <h5>Sahil Agarwal</h5>
+                            <p>Organiser</p>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- Single Speaker Area -->
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="single-speaker-area bg-gradient-overlay-2 wow fadeInUp" data-wow-delay="300ms">
+                        <!-- Thumb -->
+                        <div class="speaker-single-thumb">
+                            <img src="img/core-img/priya_pandey.jpg" alt="">
+                        </div>
+                        <!-- Social Info -->
+                        <div class="social-info">
+                            <a href="#"><i class="zmdi zmdi-linkedin"></i></a>
+                        </div>
+                        <!-- Info -->
+                        <div class="speaker-info">
+                            <h5>Priya Pandey</h5>
+                            <p>Organiser</p>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- Single Speaker Area -->
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="single-speaker-area bg-gradient-overlay-2 wow fadeInUp" data-wow-delay="300ms">
+                        <!-- Thumb -->
+                        <div class="speaker-single-thumb">
+                            <img src="img/core-img/prasanna.jpg" alt="">
+                        </div>
+                        <!-- Social Info -->
+                        <div class="social-info">
+                            <a href="#"><i class="zmdi zmdi-linkedin"></i></a>
+                        </div>
+                        <!-- Info -->
+                        <div class="speaker-info">
+                            <h5>Prasanna Kamath</h5>
+                            <p>Organiser</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Single Speaker Area -->
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="single-speaker-area bg-gradient-overlay-2 wow fadeInUp" data-wow-delay="300ms">
+                        <!-- Thumb -->
+                        <div class="speaker-single-thumb">
+                            <img src="img/core-img/gaurang.JPG" alt="">
+                        </div>
+                        <!-- Social Info -->
+                        <div class="social-info">
+                            <a href="#"><i class="zmdi zmdi-linkedin"></i></a>
+                        </div>
+                        <!-- Info -->
+                        <div class="speaker-info">
+                            <h5>Gaurang Mittal</h5>
+                            <p>Organiser</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Single Speaker Area -->
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="single-speaker-area bg-gradient-overlay-2 wow fadeInUp" data-wow-delay="300ms">
+                        <!-- Thumb -->
+                        <div class="speaker-single-thumb">
+                            <img src="img/core-img/namratha.jpg" alt="">
+                        </div>
+                        <!-- Social Info -->
+                        <div class="social-info">
+                            <a href="#"><i class="zmdi zmdi-linkedin"></i></a>
+                        </div>
+                        <!-- Info -->
+                        <div class="speaker-info">
+                            <h5>Namratha </h5>
+                            <p>Organiser</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Single Speaker Area -->
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="single-speaker-area bg-gradient-overlay-2 wow fadeInUp" data-wow-delay="300ms">
+                        <!-- Thumb -->
+                        <div class="speaker-single-thumb">
+                            <img src="img/core-img/aswin.jpeg" alt="">
+                        </div>
+                        <!-- Social Info -->
+                        <div class="social-info">
+                            <a href="#"><i class="zmdi zmdi-linkedin"></i></a>
+                        </div>
+                        <!-- Info -->
+                        <div class="speaker-info">
+                            <h5>Aswin Gopinathan </h5>
+                            <p>Organiser</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Single Speaker Area -->
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="single-speaker-area bg-gradient-overlay-2 wow fadeInUp" data-wow-delay="300ms">
+                        <!-- Thumb -->
+                        <div class="speaker-single-thumb">
+                            <img src="img/core-img/vishakha.jpg" alt="">
+                        </div>
+                        <!-- Social Info -->
+                        <div class="social-info">
+                            <a href="#"><i class="zmdi zmdi-linkedin"></i></a>
+                        </div>
+                        <!-- Info -->
+                        <div class="speaker-info">
+                            <h5>Vishakha </h5>
+                            <p>Organiser</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="single-speaker-area bg-gradient-overlay-2 wow fadeInUp" data-wow-delay="300ms">
+                        <!-- Thumb -->
+                        <div class="speaker-single-thumb">
+                            <img src="img/core-img/hitesh.jpg" alt="">
+                        </div>
+                        <!-- Social Info -->
+                        <div class="social-info">
+                            <a href="#"><i class="zmdi zmdi-linkedin"></i></a>
+                        </div>
+                        <!-- Info -->
+                        <div class="speaker-info">
+                            <h5>Hitesh </h5>
+                            <p>Organiser</p>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="single-speaker-area bg-gradient-overlay-2 wow fadeInUp" data-wow-delay="300ms">
+                        <!-- Thumb -->
+                        <div class="speaker-single-thumb">
+                            <img src="img/core-img/sainandini.jpg" alt="">
+                        </div>
+                        <!-- Social Info -->
+                        <div class="social-info">
+                            <a href="#"><i class="zmdi zmdi-linkedin"></i></a>
+                        </div>
+                        <!-- Info -->
+                        <div class="speaker-info">
+                            <h5>Sainandini Mishra </h5>
+                            <p>Organiser</p>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="single-speaker-area bg-gradient-overlay-2 wow fadeInUp" data-wow-delay="300ms">
+                        <!-- Thumb -->
+                        <div class="speaker-single-thumb">
+                            <img src="img/core-img/janak.JPG" alt="">
+                        </div>
+                        <!-- Social Info -->
+                        <div class="social-info">
+                            <a href="#"><i class="zmdi zmdi-linkedin"></i></a>
+                        </div>
+                        <!-- Info -->
+                        <div class="speaker-info">
+                            <h5>Janak Chadha </h5>
+                            <p>Organiser</p>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="single-speaker-area bg-gradient-overlay-2 wow fadeInUp" data-wow-delay="300ms">
+                        <!-- Thumb -->
+                        <div class="speaker-single-thumb">
+                            <img src="img/core-img/himanshu.jpg" alt="">
+                        </div>
+                        <!-- Social Info -->
+                        <div class="social-info">
+                            <a href="#"><i class="zmdi zmdi-linkedin"></i></a>
+                        </div>
+                        <!-- Info -->
+                        <div class="speaker-info">
+                            <h5>Himanshu Parvanda </h5>
+                            <p>Organiser</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="single-speaker-area bg-gradient-overlay-2 wow fadeInUp" data-wow-delay="300ms">
+                        <!-- Thumb -->
+                        <div class="speaker-single-thumb">
+                            <img src="img/core-img/nikhil.jpg" alt="">
+                        </div>
+                        <!-- Social Info -->
+                        <div class="social-info">
+                            <a href="#"><i class="zmdi zmdi-linkedin"></i></a>
+                        </div>
+                        <!-- Info -->
+                        <div class="speaker-info">
+                            <h5>Nikhil Bhatnagar </h5>
+                            <p>Organiser</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!--<div class="col-12">
+                    <div class="more-speaker-btn text-center mt-20 mb-40 wow fadeInUp" data-wow-delay="300ms">
+                        <a class="btn confer-btn-white" href="#">view all Speaker <i class="zmdi zmdi-long-arrow-right"></i></a>
+                    </div>
+                </div>-->
+            </div>
+        </div>
+    </section>
+    <!-- Our Speakings Area End -->
+
     <!-- Contact Area Start -->
-    <section class="contact-our-area section-padding-100-0">
+    <section class="contact-our-area section-padding-100-0" id="contact">
         <div class="container">
             <div class="row">
                 <!-- Heading -->
